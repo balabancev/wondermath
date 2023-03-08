@@ -1,0 +1,8 @@
+{
+    "factor": 4,
+    "starting_multiplier": 5,
+    "multiplier_inc": 1,
+    "starting_base": 18,
+    "base_inc": 3,
+    "answer": 42
+}
