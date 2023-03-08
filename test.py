@@ -26,4 +26,9 @@ def test():
     with open("response.json", "r") as f:
         main(json.loads(f.read()))
 
-test()
+def prod():
+    f = requests.get("https://blex18.free.beeceptor.com/wonderland", proxies={"https": "http://localhost:3128"}, verify=False)
+    main(f.json())
+
+# test()
+prod()
